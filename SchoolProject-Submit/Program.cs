@@ -1,8 +1,14 @@
+using SchoolProject.ApplicationServices.Extensions;
+using SchoolProject_Submit.ServiceCollections;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.ConfigureAuthentication(builder.Configuration);
+builder.Services.ConfigureSwagger();
 builder.Services.AddControllers();
+builder.ConfigureSerilog();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
