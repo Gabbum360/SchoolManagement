@@ -1,0 +1,17 @@
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\bin\Debug\net6.0\SchoolProject.Data.Persistence.deps.json
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\bin\Debug\net6.0\SchoolProject.Data.Persistence.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\bin\Debug\net6.0\SchoolProject.Data.Persistence.pdb
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\bin\Debug\net6.0\SchoolProject.Core.Domain.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\bin\Debug\net6.0\SchoolProject.Core.Domain.pdb
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.csproj.AssemblyReference.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.AssemblyInfoInputs.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.AssemblyInfo.cs
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.csproj.CopyComplete
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\refint\SchoolProject.Data.Persistence.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.pdb
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\ref\SchoolProject.Data.Persistence.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\bin\Debug\net6.0\SchoolProject.Data.Persistence.runtimeconfig.json
+C:\Projects\SchoolProject-Submit\SchoolProject.Data.Persistence\obj\Debug\net6.0\SchoolProject.Data.Persistence.genruntimeconfig.cache

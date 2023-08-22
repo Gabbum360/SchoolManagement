@@ -1,0 +1,12 @@
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\bin\Debug\net6.0\SchoolProject.Infrastructure.deps.json
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\bin\Debug\net6.0\SchoolProject.Infrastructure.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\bin\Debug\net6.0\SchoolProject.Infrastructure.pdb
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\SchoolProject.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\SchoolProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\SchoolProject.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\SchoolProject.Infrastructure.AssemblyInfo.cs
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\SchoolProject.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\SchoolProject.Infrastructure.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\refint\SchoolProject.Infrastructure.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\SchoolProject.Infrastructure.pdb
+C:\Projects\SchoolProject-Submit\SchoolProject.Infrastructure\obj\Debug\net6.0\ref\SchoolProject.Infrastructure.dll

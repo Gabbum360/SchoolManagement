@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Common\Enums\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.32.1" />
@@ -21,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SchoolProject.Core.Domain\SchoolProject.Core.Domain.csproj" />
     <ProjectReference Include="..\SchoolProject.Data.Persistence\SchoolProject.Data.Persistence.csproj" />
+    <ProjectReference Include="..\SchoolProject.Infrastructure\SchoolProject.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

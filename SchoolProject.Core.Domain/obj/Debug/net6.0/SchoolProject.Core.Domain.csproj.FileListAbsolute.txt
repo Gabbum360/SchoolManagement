@@ -1,0 +1,12 @@
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\bin\Debug\net6.0\SchoolProject.Core.Domain.deps.json
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\bin\Debug\net6.0\SchoolProject.Core.Domain.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\bin\Debug\net6.0\SchoolProject.Core.Domain.pdb
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\SchoolProject.Core.Domain.csproj.AssemblyReference.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\SchoolProject.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\SchoolProject.Core.Domain.AssemblyInfoInputs.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\SchoolProject.Core.Domain.AssemblyInfo.cs
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\SchoolProject.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\SchoolProject.Core.Domain.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\refint\SchoolProject.Core.Domain.dll
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\SchoolProject.Core.Domain.pdb
+C:\Projects\SchoolProject-Submit\SchoolProject.Core.Domain\obj\Debug\net6.0\ref\SchoolProject.Core.Domain.dll
