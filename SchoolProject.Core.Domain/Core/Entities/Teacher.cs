@@ -9,7 +9,7 @@ namespace SchoolProject.Core.Domain
     public class Teacher
     {
         public Teacher() {}
-        public Teacher(Guid id, string firstname, string surname, int age, string sex, string country, int staffCount)
+        public Teacher(Guid id, string firstname, string surname, int age, string sex, string country, string staffCount)
         {
             Id = id;
             FirstName = firstname;
@@ -17,7 +17,7 @@ namespace SchoolProject.Core.Domain
             Age = age;  
             Sex = sex;
             Country = country;
-            StaffNo = GenerateStudentNo(staffCount);
+            StaffNo = GenerateStaffNo(staffCount);
         }
         public Guid Id { get; set; }
         public string SurName { get; private set; }
@@ -48,9 +48,9 @@ namespace SchoolProject.Core.Domain
             this.Sex = sex;
             return this;
         }
-        public Teacher SetStudentNo(string studentNo)
+        public Teacher SetStaffNo(string staffNo)
         {
-            this.StaffNo = studentNo;
+            this.StaffNo = staffNo;
             return this;
         }
         public Teacher SetCountry(string country)
@@ -60,7 +60,7 @@ namespace SchoolProject.Core.Domain
         }
         public static class TeacherFactory
         {
-            public static Teacher Create(Guid id, string firstname, string surname, int age, string sex, string country, int staffCount)
+            public static Teacher Create(Guid id, string firstname, string surname, int age, string sex, string country, string staffCount)
             {
                 return new Teacher(id, firstname, surname, age, sex, country, staffCount);
             }
@@ -69,7 +69,7 @@ namespace SchoolProject.Core.Domain
                 return new Teacher();
             }
         }
-        private string GenerateStudentNo(int staffCount)
+        private string GenerateStaffNo(string staffCount)
         {
 
             var studentNo = $"fgc{staffCount + 1}";

@@ -1349,7 +1349,8 @@
       "SchoolProject.Infrastructure/1.0.0": {
         "dependencies": {
           "ElasticEmail": "4.0.22",
-          "MailKit": "4.1.0"
+          "MailKit": "4.1.0",
+          "Microsoft.Extensions.Options": "7.0.1"
         },
         "runtime": {
           "SchoolProject.Infrastructure.dll": {}

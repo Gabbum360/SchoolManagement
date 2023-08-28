@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using ElasticEmail.Client;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,16 +21,17 @@ namespace SchoolProject.ApplicationServices.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<SPSDbContext>(d => d.UseSqlServer(configuration.GetConnectionString("SPConnection")));
+            var connectionStrings = configuration.GetConnectionString("SPConnection");
+            services.AddDbContext<SPSDbContext>();
             services.AddMediatR(cfg =>
             {
                 cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly());
             });
             //for identity
-            /*services.AddIdentityCore<User, IdentityRole<Guid>>()
+            /*services.AddIdentityCore<IdentityUser, IdentityRole<Guid>>()
                 .AddEntityFrameworkStores<SPSDbContext>()
                 .AddDefaultTokenProviders();*/
-            //services.AddTransient<MailOptions>(configuration.GetConnectionString(""));
+            //services.Configure<MailOptions>(configuration.GetSection("MailOptions"));
             services.AddTransient<IMailBuilder, MailBuilder>();
             services.AddTransient<IMailService, MailService>();
             return services;

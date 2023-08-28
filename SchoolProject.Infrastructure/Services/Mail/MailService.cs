@@ -2,6 +2,7 @@
 using ElasticEmail.Client;
 using ElasticEmail.Model;
 using MailKit;
+using Microsoft.Extensions.Options;
 using SchoolProject.Infrastructure.Common;
 using SchoolProject.Infrastructure.Services.Mail;
 using System;
@@ -17,15 +18,11 @@ namespace SchoolProject.Infrastructure.Services
 {
     public class MailService : IMailService
     {
-        private HttpClient _httpClient;
         private MailOptions _mailOptions;
-        //private ILogger<MailService> _logger;
 
-        public MailService(HttpClient httpClient, MailOptions mailOptions /*ILogger<MailService> logger*/)
+        public MailService(IOptions<MailOptions> mailOptions)
         {
-            _httpClient = httpClient;
-            _mailOptions = mailOptions;
-           // _logger = logger;
+            _mailOptions = mailOptions.Value;
         }
 
         public void BuildNewStudentRegistrationMessage(string to, string firstname, string lastname, string email, string DateCreated)
@@ -38,11 +35,17 @@ namespace SchoolProject.Infrastructure.Services
                 .BuildMailDto();
                 SendEmail(mailObject);
         }
-        /*public void BuildNewAdminRegistrationMessage(string adminName, string adminEmail, string DateCreated)
+        public void BuildNewUserRegistrationMessage(string to, string firstname, string adminName, string adminEmail, DateTime activationDate)
         {
-
+            var builder = new MailBuilder();
+            var mailObject = builder.WithFromEmail(to)
+                .WithToEmail(adminEmail)
+                .WithSubject(_mailOptions.UserSuccessfulRegistrationMessage)
+                .BuildNewUserRegistrationMessage(firstname, adminName, adminEmail, activationDate)
+                .BuildMailDto();
+            SendEmail(mailObject);
         }
-        public void BuildNewStudentRegistrationMessageToAdmin(string adminEmail, string studentFullName, string email, string DateCreated)
+        /*public void BuildNewStudentRegistrationMessageToAdmin(string adminEmail, string studentFullName, string email, string DateCreated)
         {
 
         }*/

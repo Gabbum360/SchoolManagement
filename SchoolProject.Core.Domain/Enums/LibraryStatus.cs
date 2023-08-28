@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SchoolProject.ApplicationServices.Common.Enums
+namespace SchoolProject.Core.Domain
 {
     public enum LibraryStatus
     {

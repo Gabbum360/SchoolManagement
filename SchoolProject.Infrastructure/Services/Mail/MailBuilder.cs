@@ -11,10 +11,10 @@ namespace SchoolProject.Infrastructure.Services
     public class MailBuilder : IMailBuilder
     {
         //by default its private modifier.
-        string _toEmail;
-        string _subject;
-        string _fromEmail;
-        string _message;
+        private string _toEmail;
+        private string _subject;
+        private string _fromEmail;
+        private string _message;
 
 
         public MailBuilder WithToEmail(string toEmail)
@@ -43,6 +43,7 @@ namespace SchoolProject.Infrastructure.Services
                 .Replace("{Date Registered}", DateCreated);
             return this;
         }
+        //mail to Admin saying student registered.
         public MailBuilder BuildNewStudentRegistrationMessageToAdmin(string adminEmail, string studentFullName, string email, string DateCreated)
         {
             var rawTemplate = FileHelper.ExtractMailTemplate("page9-loan-approved-by-customer-and-disbursed.html");
@@ -52,6 +53,7 @@ namespace SchoolProject.Infrastructure.Services
                 .Replace("{Date Registered}", DateCreated);
             return this;
         }
+        //Admin Registered.
         public MailBuilder BuildNewAdminRegistrationMessage(string adminName, string adminEmail, string DateCreated)
         {
             var rawTemplate = FileHelper.ExtractMailTemplate("page9-loan-approved-by-customer-and-disbursed.html");
@@ -59,6 +61,16 @@ namespace SchoolProject.Infrastructure.Services
                 .Replace("{Admin's Email}", adminEmail)
                 .Replace("{Admin's Name}", adminName)
                 .Replace("{Date Registered}", DateCreated);
+            return this;
+        }
+        //User Registered.
+        public MailBuilder BuildNewUserRegistrationMessage(string firstname, string adminName, string adminEmail, DateTime activationDate)
+        {
+            var rawTemplate = FileHelper.ExtractMailTemplate("page9-loan-approved-by-customer-and-disbursed.html");
+            var _message = rawTemplate.Replace("{User Firstname}", firstname)
+                .Replace("{Admin's Email}", adminEmail)
+                .Replace("{Admin's Name}", adminName);
+                //.Replace("{Date Registered}", activationDate);
             return this;
         }
         public MailObject BuildMailDto()

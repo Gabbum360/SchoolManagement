@@ -9,7 +9,8 @@ namespace SchoolProject.Infrastructure.Services.Mail
     public interface IMailBuilder
     {
         MailBuilder BuildNewStudentRegistrationMessage(string firstname, string lastname, string email, string DateCreated);
-        MailBuilder BuildNewAdminRegistrationMessage(string adminName, string adminEmail, string DateCreated);
+        //MailBuilder BuildNewAdminRegistrationMessage(string adminName, string adminEmail, string DateCreated);
         MailBuilder BuildNewStudentRegistrationMessageToAdmin(string adminEmail, string studentFullName, string email, string DateCreated);
+        MailBuilder BuildNewUserRegistrationMessage(string firstname, string adminName, string adminEmail, DateTime activationDate);
     }
 }

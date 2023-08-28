@@ -20,6 +20,8 @@ using System.Text;
 using System.Threading.Tasks;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 using IdentityRole = Microsoft.AspNetCore.Identity.IdentityRole;
+using MediatR;
+using SchoolProject.ApplicationServices.Features.AuthenticationManagement.Event;
 
 namespace SchoolProject.ApplicationServices.Features.AuthenticationManagement
 {
@@ -31,13 +33,16 @@ namespace SchoolProject.ApplicationServices.Features.AuthenticationManagement
         private readonly Microsoft.AspNetCore.Identity.RoleManager<IdentityRole> roleManager;
         /* private readonly ILogger<AuthenticateController> _logger;*/
         private readonly IConfiguration _configuration;
+        private readonly IPublisher _publish;
 
-        public Authentication(Microsoft.AspNetCore.Identity.UserManager<User> userManager, Microsoft.AspNetCore.Identity.RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        public Authentication(Microsoft.AspNetCore.Identity.UserManager<User> userManager, Microsoft.AspNetCore.Identity.RoleManager<IdentityRole> roleManager, IConfiguration configuration,
+            IPublisher publish)
         {
             this._userManager = userManager;
             this.roleManager = roleManager;
             /*Ilogger<AuthenticateController> logger;*/
             _configuration = configuration;
+            _publish = publish;
         }
 
         [HttpPost]
@@ -96,6 +101,14 @@ namespace SchoolProject.ApplicationServices.Features.AuthenticationManagement
             if (!result.Succeeded)
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! please check your details and try again" });
             return Ok(new Response { Status = "success", Message = "User created successfully!" });
+            await _publish.Publish(new UserRegistratedEvent()
+            {
+                To = "",
+                ActivationDate = DateTime.Now,
+                AdminName = "",
+                AdminEmail = "",
+                Firstname = ""
+            });
         }
 
         [HttpPost("register-admin")]
